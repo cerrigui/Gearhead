@@ -1,0 +1,130 @@
+body {
+  color: rgb(230, 230, 230); /* Texto claro para contraste */
+  background: #121212; /* Fundo bem escuro para um visual dark */
+  margin: 0;
+  font-family: "Chakra Petch", sans-serif;
+  margin-bottom: 100px;
+}
+
+header {
+  border-bottom: solid 2px #9c27b0; /* Cor roxa vibrante para o header */
+  padding: 20px;
+  font-size: 32px;
+  color: #9c27b0; /* Cor roxa vibrante para o texto do header */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para adicionar profundidade */
+}
+
+.chamada {
+  background: #1e1e1e; /* Fundo escuro com uma leve variação */
+  padding-bottom: 80px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px; /* Bordas arredondadas para um toque moderno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+}
+
+.chamada-texto {
+  margin-right: 5%;
+  color: #e0e0e0; /* Texto claro para contraste */
+}
+
+h1 {
+  font-size: 40px;
+  color: #ab47bc; /* Tom de roxo vibrante para o título */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para destacar o texto */
+}
+
+p {
+  font-size: 20px;
+  color: #b0bec5; /* Cinza claro para o texto */
+}
+
+.categoria-videos {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+.categoria {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 50px;
+}
+
+.categoria-videos img {
+  opacity: 0.7; /* Imagens com opacidade ajustada */
+  height: 200px;
+  transition: transform 0.3s ease; /* Transição suave para o efeito hover */
+}
+
+.categoria-videos img:hover {
+  opacity: 1.0;
+  border: 3px solid #9c27b0; /* Destaque com roxo vibrante */
+  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+.categoria h2 {
+  color: #ab47bc; /* Tom de roxo vibrante para os títulos das categorias */
+  border-bottom: 2px solid #9c27b0; /* Linha embaixo do título para destaque */
+  padding-bottom: 5px;
+}
+
+.categoria-videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre os vídeos */
+}
+
+.categoria-videos a {
+  width: calc(25% - 20px); /* 4 colunas com espaço entre elas */
+  display: block;
+}
+
+.categoria-videos img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bordas arredondadas para um visual mais suave */
+  transition: transform 0.3s;
+}
+
+.categoria-videos img:hover {
+  transform: scale(1.05);
+}
+
+.chamada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #333, #444);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.chamada h1 {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.chamada p {
+  font-size: 1.2em;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.chamada iframe {
+  width: 100%;
+  max-width: 1200px; /* Aumenta o tamanho máximo do vídeo */
+  aspect-ratio: 16 / 9; /* Mantém a proporção 16:9 */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.chamada iframe:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s;
+}
